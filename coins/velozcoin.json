@@ -1,0 +1,8 @@
+{
+  "name": "velozcoin",
+  "symbol": "VLZ",
+  "algorithm": "x11",
+  "mposDiffMultiplier": 256,
+  "peerMagic": "bd6b0cbf",
+  "peerMagicTestnet": "76657274"
+}
