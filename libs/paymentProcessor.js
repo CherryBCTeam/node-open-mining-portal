@@ -24,9 +24,13 @@ module.exports = function(logger){
         SetupForPool(logger, poolConfigs[coin], function(setupResults){
             callback(setupResults);
         });
-    }, function(coins){
-        coins.forEach(function(coin){
+    }, function (coins) {        
+        if (coins == null) {
+            console.log("coins : " + coins);
+            return;
+        }
 
+        coins.forEach(function(coin){
             var poolOptions = poolConfigs[coin];
             var processingConfig = poolOptions.paymentProcessing;
             var logSystem = 'Payments';
